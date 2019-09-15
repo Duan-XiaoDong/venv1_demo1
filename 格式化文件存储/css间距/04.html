@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>元素的特点</title>
+    <style>
+        .box1{
+            /*块级元素
+            默认宽度是父级元素的100%
+            独占一行 即使设置了宽度
+            支持所以样式
+            */
+            width:100px;
+            height:100px;
+            background:green;
+            margin:20px;
+            padding:20px;
+
+            /*垂直方向居中*/
+            line-height:100px;
+            /*水平方向居中*/
+            text-align:center;
+        }
+        span{
+            /*内联元素 不独占一行 代码换行时会产生一个间距 只支持部分样式
+              不支持高度和宽度属性
+              宽高是由内容撑开
+              只支持左右margin值 不支持上下
+              支持padding值
+            */
+            height:100px;
+            width:100px;
+            background:green;
+            margin:20px;
+            padding:20px;
+        }
+
+        input{
+            /*行内块元素
+              不独占一行，盒子并行一行 代码换行时会产生间距
+              支持所有的样式
+              如果不设置宽高，那么他的宽高就又内容决*/
+            width:100px;
+            height:100px;
+            margin:30px;
+            padding:30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1"><b>box1</b></div>
+    上面一个是块级元素，<span>他独占一行</span>，内联元素不独占一行 <br>
+    <!--上面一个是块级元素，<span>他独占一行</span>，内联元素不独占一行-->
+    请输入你一段话，<input type="text">。
+</body>
+</html>

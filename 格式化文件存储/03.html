@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>HTML 常见的行级元素</title>
+
+    </head>
+
+    <body>
+        <!--链接标签
+            a 标签 href属性，跟的是需要跳转的网址
+                target：_blank 在新窗口打开跳转的页面
+            -->
+            <!--<a href="http://www.baidu.com">百度</a>-->
+
+            <a href="./02.html" target="_blank">跳转到本地文件</a>
+
+            <!--路径问题 在实际开发中建议使用相对路径 ./当前目录 ../上级目录 -->
+            <!--绝对路径 在windows当中绝对路径的根是我们文件所在的盘符
+            E:\练习\venv1_demo1
+            -->
+            <!--通过a标签制作锚点-->
+        <!--图像标签 img(单标签，不需要闭合)
+            src：图片的地址(网络资源或者本地资源)
+            alt：用于图片加载失败的替代文字(必须存在)
+            title：鼠标悬停在图片上的提示信息(可写可不写)
+            width：设置图片的宽度
+            height：设置图片的高度
+            注意：我们一般只给图片设置宽度/高度，高度/宽度会等比例放大或者缩小
+        -->
+        <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1567745846681&di=436ffd654a53eab4d09361783abc0fe7&imgtype=0&src=http%3A%2F%2Fpic33.nipic.com%2F20131007%2F13639685_123501617185_2.jpg"
+        alt="这是图片标签" title="这是一张风景大图" width="200px" height="200px">
+        <!--<img src="./images/timg.jpg" alt="风景图">-->
+        <br>
+
+        <!--文本标签-->
+            <!--加粗b 具有强调语义strong   斜体i em也是具有强调语义 -->
+            <b>src：</b>图片的地址(网络资源或者本地资源)<br>
+            <i>alt：</i> 用于图片加载失败的替代文字(必须存在)<br>
+            <strong>title:</strong>鼠标悬停在图片上的提示信息(可写可不写)<br>
+            <em>width：</em>设置图片的宽度 <br>
+            height：设置图片的高度 <br>
+            注意：我们一般只给图片设置宽度/高度，高度/宽度会等比例放大或者缩小 <br>
+        <!--span 无语以的行级元素 一般span标签也是配合css使用，来这设置文本当中的一部分内容-->
+        <span style="color: yellow">注意；</span>这句话只是一个测试<br>
+
+        <!--html当中的实体字符 &gt;;大于号， &lt；；小于号， &copy；版权， &nbsp;空格 -->
+            3>2; <br>
+            3&gt;2; <br>
+            &copy <br>
+            1&#60;2; <br>
+            注意：&nbsp;&nbsp;&nbsp;&nbsp;我们一般只给图片设置宽度/高度，高度/宽度会等比例放大或者缩小 <br>
+
+
+    </body>
+
+
+</html>
+
